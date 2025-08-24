@@ -20,7 +20,7 @@ While Laravel Cashier does this job really well, there are some features that ca
 # Installation
 Install the package:
 ```bash
-$ composer require creatydev/plans
+composer require creatydev/plans
 ```
 
 If your Laravel version does not support package discovery, add this line in the `providers` array in your `config/app.php` file:
@@ -30,12 +30,12 @@ Creatydev\Plans\PlansServiceProvider::class,
 
 Publish the config file & migration files:
 ```bash
-$ php artisan vendor:publish --provider=Creatydev\Plans\PlansServiceProvider
+php artisan vendor:publish --provider="Creatydev\Plans\PlansServiceProvider"
 ```
 
 Migrate the database:
 ```bash
-$ php artisan migrate
+php artisan migrate
 ```
 
 Add the `HasPlans` trait to your Eloquent model:
